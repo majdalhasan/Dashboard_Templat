@@ -535,9 +535,14 @@ ul {
   resize: none;
   min-height: 150px;
 }
+.settings-page .email {
+  display: inline-flex;
+  width: calc(100% - 80px);
+}
 .toggle-checkbox {
   -webkit-appearance: none;
   appearance: none;
+  display: none;
 }
 .toggle-switch {
   background-color: #ccc;
