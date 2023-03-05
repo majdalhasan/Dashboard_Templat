@@ -1018,6 +1018,16 @@ color: var(--blue-color);
 }
 /* Start Friends Page */
 /* Start Files Page */
+.files-page {
+  flex-direction: row-reverse;
+  align-items: flex-start;
+}
+@media (max-width: 767px) {
+  .files-page {
+    flex-direction: column;
+    align-items: normal;
+  }
+}
 .files-page .files-stats {
   min-width: 260px;
 }
@@ -1051,6 +1061,21 @@ color: var(--blue-color);
 }
 .files-page .files-stats .upload:hover i {
   animation: go-up 0.8s infinite;
+}
+.files-page .file-content {
+  flex: 1;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.files-page .file-content img {
+  width: 64px;
+  height: 64px;
+  transition: 0.3s;
+}
+.files-page .file-content .file:hover img {
+  transform: rotate(5deg);
+}
+.files-page .file-content .info {
+  border-top: 1px solid #eee;
 }
 /* End Files Page */
 /* Start Animation */
